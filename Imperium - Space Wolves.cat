@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="59" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="60" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="cb5b-3605-7522-c561" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="2e06-13ae-6789-b591" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -1422,7 +1422,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Master Crafted Power Weapon and Storm Bolter or Storm Shield" hidden="false" id="15a3-9f26-5142-9770">
                       <entryLinks>
-                        <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="64b1-484c-f26f-fd51" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                        <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="64b1-484c-f26f-fd51" type="selectionEntry" targetId="2b6b-56b9-13a8-3320">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3a-8d24-cf72-3096"/>
                             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8c3-e5b7-4d53-1bdd"/>
@@ -1432,7 +1432,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                       <selectionEntryGroups>
                         <selectionEntryGroup name="Storm Bolter or Storm Shield" id="5f83-c1a1-a7da-3081" hidden="false">
                           <entryLinks>
-                            <entryLink import="true" name="Storm bolter" hidden="false" id="2dea-b2c-e2f9-5de3" type="selectionEntry" targetId="2fb0-97d5-262d-b992">
+                            <entryLink import="true" name="Storm bolter" hidden="false" id="2dea-b2c-e2f9-5de3" type="selectionEntry" targetId="5db8-b814-2e30-9d9c">
                               <constraints>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="122c-50d0-6004-41c8"/>
                               </constraints>
@@ -1495,12 +1495,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Assault Cannon" hidden="false" id="4c24-dd25-e2f2-ca95" type="selectionEntry" targetId="2de6-ff2-dc37-b20d">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d146-6a2f-b643-05b7"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51a5-5e25-b3a7-c667"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Power fist" hidden="false" id="ef46-86f9-c3f4-6dd1" type="selectionEntry" targetId="eb70-5918-e9a-5a3f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29a7-e1a2-9878-24f2"/>
@@ -1515,10 +1509,30 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                   </conditions>
                 </modifier>
               </modifiers>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="77fd-06d1-fb38-2d30">
+                  <profiles>
+                    <profile name="Assault Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="22cb-2c55-924a-70e0">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" id="c894-3444-7411-90fe" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Wolf Guard Terminators /w Master-crafted Power Weapon &amp; Storm bolter" hidden="false" id="5536-c63d-bbf1-ea8f" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="45c8-36b3-fb4c-a395" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="45c8-36b3-fb4c-a395" type="selectionEntry" targetId="2b6b-56b9-13a8-3320">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5221-3442-0308-72ab"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1116-b1a9-b181-658c"/>
@@ -1567,7 +1581,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccfd-314a-070d-af6e"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="40c2-fe16-d759-6337" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="40c2-fe16-d759-6337" type="selectionEntry" targetId="2b6b-56b9-13a8-3320">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08a2-b58d-c8ad-f20a"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbf1-b011-4f89-9c06"/>
